@@ -1,0 +1,10 @@
+{
+    "name": "Test info-beamer video streaming",
+    "author": "Florian Wesch <fw@info-beamer.com>",
+    "desc": "Play an internet stream. Experimental",
+    "repository": "https://github.com/info-beamer/package-stream-test",
+    "lifecycle": "beta",
+    "runtime": {
+        "outside_sources": true
+    }
+}

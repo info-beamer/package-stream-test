@@ -1,0 +1,10 @@
+{
+    "name": "Stream Test",
+    "options": [{
+        "title": "Url",
+        "ui_width": 12,
+        "name": "url",
+        "type": "string",
+        "default": ""
+    }]
+}
