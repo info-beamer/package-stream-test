@@ -2,9 +2,15 @@
     "name": "Stream Test",
     "options": [{
         "title": "Url",
-        "ui_width": 12,
+        "ui_width": 9,
         "name": "url",
         "type": "string",
         "default": ""
+    }, {
+        "title": "Audio",
+        "ui_width": 3,
+        "name": "audio",
+        "type": "boolean",
+        "default": true
     }]
 }

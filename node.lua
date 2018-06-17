@@ -5,6 +5,7 @@ util.noglobals()
 local video
 local url
 local next_try = 0
+local audio = true
 
 local function stop_and_wait(t)
     if video then
@@ -24,11 +25,13 @@ local function maybe_restart()
     video = resource.load_video{
         file = url,
         raw = true,
+        audio = audio,
     }
 end
 
 util.json_watch("config.json", function(config)
     url = config.url
+    audio = config.audio
     next_try = sys.now()
     stop_and_wait(0)
 end)
