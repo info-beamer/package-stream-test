@@ -1,6 +1,6 @@
 gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
-util.noglobals()
+util.no_globals()
 
 local video
 local url
@@ -43,9 +43,9 @@ function node.render()
         local state, w, h = video:state()
         if state == "loaded" then
             local x1, y1, x2, y2 = util.scale_into(NATIVE_WIDTH, NATIVE_HEIGHT, w, h)
-            video:target(x1, y1, x2, y2):layer(2)
+            video:place(x1, y1, x2, y2):layer(2)
         elseif state == "finished" or state == "error" then
-            stop_and_wait(20)
+            stop_and_wait(10)
         end
     else
         maybe_restart()

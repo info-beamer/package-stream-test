@@ -4,6 +4,7 @@
     "desc": "Play an internet stream. Experimental",
     "repository": "https://github.com/info-beamer/package-stream-test",
     "lifecycle": "beta",
+    "platforms": ["pi/v6", "pi/v7", "pi/v8"],
     "runtime": {
         "outside_sources": true
     }
